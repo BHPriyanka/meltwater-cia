@@ -1,0 +1,65 @@
+﻿Meltwater Technical Exercise
+The purpose of this assignment is to get a feel for how you approach technical and programming problems. There is no ‘right’ or ‘wrong’ answer. Think about the problem and do the best you can. Be prepared to talk about the process you followed and any questions or problems you encountered.
+
+
+Assignment
+You work for the CIA. You are given a software engineering assignment related to processing classified documents.
+
+
+You are given a task to build a web application to process classified documents (text format) and XXXX censored text.
+
+
+Definition:
+The application will XXXX given keywords and phrases from document text and insert XXXX at the locations where text was XXXXd.
+
+
+Input parameters:
+1.     String of keywords and phrases: a string of censored keywords and phrases separated by spaces or commas. Phrases will be enclosed in single or double quotes. Some examples:
+          Hello world “Boston Red Sox” 
+                ‘Pepperoni Pizza’, ‘Cheese Pizza’, beer
+2.     Document text – the original document text that needs the provided keywords and phrases XXXXd (masked out).
+
+
+Returns:
+Document text with indicated keywords and phrases XXXXd and replaced with XXXX.
+
+
+Requirements:
+1.        Coding language: NodeJS
+2.        Framework: Angular, if any
+3.        Must be a web application, with a frontend accessible through the web browser
+4.        Must include instructions on how to run (such as in a read.me file on the repo)
+
+
+Please design and build this web application in a way it can be demoed. There is no request to store data, but feel free to if you choose. Be prepared to walk the team through your code and discuss the design issues and trade-offs you considered.
+
+
+
+
+
+
+Web application:
+Use cases:
+User uploads a text file
+User enters the keys to be masked
+User enters the phrases to be masked 
+Both in different text boxes, separated by coma and strings with quotes
+
+
+Application should generate a text document with phrases and keywords masked in the original document
+User downloads the document
+User views the document
+
+
+Data Model:
+A data model describes the various types of objects that are used in a Website such as pages, widgets, and users. A type of object is also referred to as a class and the diagram below is called a class diagram. Data models also capture the relationships between the different types of objects or classes. For instance the class diagram below states that a person might be related to, or have, several Websites, that a Website in turn can have many pages, a page can have several widgets.
+
+
+Wireframes:
+Login.html
+Page.html (for upload and text area)
+Text.html to enter the keywords and phrases separated by coma
+Result.html (to view file and download)
+
+
+Page flow
