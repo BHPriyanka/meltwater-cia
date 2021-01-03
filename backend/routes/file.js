@@ -16,7 +16,7 @@ let storage = multer.diskStorage({
 let upload = multer({ storage: storage });
 
 const fileRoutes = (app) => {
-	app.post('/api/file/fileUpload', upload.single('photo'), fileUpload);
+	app.post('/api/file/fileUpload', upload.single(''), fileUpload);
 	app.get('/api/file/maskContent', maskContent);
 };
 module.exports = fileRoutes;

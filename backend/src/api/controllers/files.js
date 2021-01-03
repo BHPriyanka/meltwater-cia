@@ -25,18 +25,17 @@ const maskContent = async (req, res) => {
       console.log(arr);
 
       var i;
-      var result;
+      var result = data;
       for (i = 0; i < arr.length; i++) {
         arr[i] = arr[i].trimStart();
         arr[i] = arr[i].trimEnd();
-        /*arr[i] = arr[i].replace(/\s/g,' ');
+        arr[i] = arr[i].replace(/\s/g,' ');
         if (arr[i].indexOf('\'') >= 0 || arr[i].indexOf('"') >= 0) {
             arr[i] = arr[i].substring(1,arr[i].length-1);
         }
-        console.log(arr[i]);*/
-        result = data.replace(new RegExp(arr[i], "gi"), 'XXXX');
+        console.log(arr[i]);
+        result = result.replace(new RegExp(arr[i], "gi"), 'XXXX');
       }
-
       fs.writeFile(`./public/uploads/${req.query.fileName}`, result, 'utf8', function (err) {
         if (err) return console.log(err);
       });
